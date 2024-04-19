@@ -7,7 +7,7 @@ const AddBook = ()=>{
         e.preventDefault();  
     
         axios
-          .post('https://ian-finals-zzip-931qkyq9x-ian-kariukis-projects.vercel.app/', book)
+          .post('https://ian-finals-zzip-dms42wxtu-ian-kariukis-projects.vercel.app/', book)
           .then((res) => {
             window.location = '/';
           });
