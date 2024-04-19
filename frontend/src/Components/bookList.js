@@ -28,7 +28,7 @@ const BookList = () => {
 
     const deleteBook = (id) => {
         axios
-            .delete('https://ian-finals-zzip-931qkyq9x-ian-kariukis-projects.vercel.app/' + id)
+            .delete('https://ian-finals-zzip-dms42wxtu-ian-kariukis-projects.vercel.app/' + id)
             .then((response) => {
                 console.log(response.data);
             });
@@ -39,7 +39,7 @@ const BookList = () => {
 
     useEffect(() => {
         axios
-            .get('https://ian-finals-zzip-931qkyq9x-ian-kariukis-projects.vercel.app/')
+            .get('https://ian-finals-zzip-dms42wxtu-ian-kariukis-projects.vercel.app/')
             .then((res) => {
                 setBooks(res.data);
             })
