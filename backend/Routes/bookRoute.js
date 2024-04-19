@@ -5,6 +5,7 @@ const router = require('express').Router();
 //Get all books
 router.route("/")
     .get((req,res)=>{
+        res.send("Express on Vercel");
         Books.find()
         .then((books)=> res.status(200).json(books))
         .catch((err)=> res.status(400).json("Error" +err));
